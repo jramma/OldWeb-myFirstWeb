@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pepe's portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/png" href="img/logoP.png">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio">Pepe</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Pepe Ramos</h1>
+            <h2>Desarrollador BackEnd - Java</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/peperamos090922/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/jramma"><i class="fa-brands fa-github"></i></a>
+                <a href="https://t.me/jramma"><i class="fa-brands fa-telegram"></i></a>
+                <a href="mailto:jrmasip97@gmail.com"><i class="fa-brands fa-google"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Pepe Ramos.</span> Me gradué en el Bootcamp de ITAcademy Barcelona especializada en Java,
+                es decir, normalmente creo APIs, bases de datos y las gestiono. Actualmente estoy buscando trabajo y me
+                encantaría encontrar algo que me permita crecer más en este mundo y seguir aprendiendo. </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +34 649369845
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            jrmasip97@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.peperamos.cat
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>
+                            Actualmente Barcelona
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-terminal"></i>
+                            <span>LINUX</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <form method="get" action="CVes.pdf">
+                <button type="submit">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MongoDB</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>84%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>61%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>69%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Pensamiento crítico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>82%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GitHub</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>79%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>Para ver más: <a href="https://nuwe.io/dev/profile/jramma"> mi perfil en Hackathons</a>. <i
+                            class="fa-solid fa-laptop-code"></i>
+                        <span class="overlay"></span>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bootcamp Java</h4>
+                        <span class="casa">ITAcademy Barcelona</span>
+                        <span class="fecha">2022</span>
+                        <p>La posición de back-end developer se encarga de programar la parte de la web que no es
+                            visible con tecnologías como Nodejs y Java. Se centra en todas las funciones que ofrece el
+                            sitio web y las bases de datos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Fotografía Profesional</h4>
+                        <span class="casa">Edutin Academy</span>
+                        <span class="fecha">2020</span>
+                        <p>Comprender la complejidad de la fotografía análoga.
+                            Entender la complejidad de la fotografía digital.
+                            Aplicar las técnicas de recolección de imágenes mediante la fotografía análoga.
+                            Aplicar las técnicas de recolección de imágenes mediante la fotografía digital.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Grado en Filosofía</h4>
+                        <span class="casa">Universidad de Barcelona</span>
+                        <span class="fecha">2016-2020</span>
+                        <p>
+                            Los graduados en Filosofía son capaces de desarrollar habilidades de tipo lógico y
+                            argumental, de dominar el lenguaje, desarrollar la creatividad en el ámbito de las ideas,
+                            gestionar y poseer una gran capacidad de reflexión y análisis. En definitiva, poseen unos
+                            conocimientos sólidos y amplios sobre el estudio teórico de problemas abstractos y sobre los
+                            ámbitos de discusión y debate.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Jump2Digital Hackathon</h4>
+                        <span class="casa">Primer puesto</span>
+                        <span class="fecha">Noviembre 2022</span>
+                        <p>En doce horas se me introdujo en un equipo, diseñamos una api con 8 endpoints, seguridad con
+                            JWT, donde un supuesto equipo de marketing podría gestionar la logística de una
+                            cadena de supermercados internacional. Los datos fueron proporcionados por las empresas que
+                            gestionaban el evento: <a
+                                href="https://barcelonadigitaltalent.com/jump2digital-hackathon/">más información
+                                aquí</a>.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Hackathon Jornada de Talent Digital</h4>
+                        <span class="casa">Segundo puesto</span>
+                        <span class="fecha">Octubre 2022</span>
+                        <p>En doce horas creeamos una api, un equipo de cinco programadores, que recolectaba datos
+                            públicos sobre la población de Barcelona y producía una serie de gráficos para visualizar
+                            dónde había más riesgo a que personas de tercera edad quedaran solas: <a
+                                href="https://nuwe.io/dev/event/hackathon-jornada-talent">más información
+                                aquí</a>.</p>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Becario de proyectos</h4>
+                        <span class="casa">Fundación Casa de Rusia en Barcelona</span>
+                        <span class="fecha">2021</span>
+                        <p>Investigar, analizar, observar y realizar eventos culturales relacionados con la cultura Rusa
+                            en Barcelona.
+                            Programar y publicar boletines de los clientes.
+                            Asistir a eventos e informarse.
+                            Corregir la redacción y publicar contenido en la web.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3> 50mm f/1,8 </h3>
+                        <p> 1/1000 </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3> 80mm f/7,1 </h3>
+                        <p> 1/200 </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3> 105mm f/8</h3>
+                        <p> 1/320 </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3> 50mm f/5</h3>
+                        <p> 1/125 </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3> 105mm f/14 </h3>
+                        <p> 1/160 </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3> 24mm f/5,6 </h3>
+                        <p> 1/1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="enviar.php" method="post">
+                        <input type="text" name="name" id="name" placeholder="Tú Nombre">
+                        <input type="text" name="phone" id="phone" placeholder="Número telefónico">
+                        <input type="text" name="mail" id="mail" placeholder="Dirección de correo">
+                        <input type="text" name="tema" id="tema" placeholder="Tema">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button type="submit">
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <br>08970 Sant Joan Despí, Barcelona
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-signal-out"></i><br>
+                                Teléfono: 649369845
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i> <br>
+                                Email: jrmasip97@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/peperamos090922/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/jramma"><i class="fa-brands fa-github"></i></a>
+            <a href="https://t.me/jramma"><i class="fa-brands fa-telegram"></i></a>
+            <a href="mailto:jrmasip97@gmail.com"><i class="fa-brands fa-google"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
